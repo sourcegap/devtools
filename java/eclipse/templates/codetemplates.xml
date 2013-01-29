@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="gettercomment_context" deleted="false" description="Comment for getter method" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.gettercomment" name="gettercomment">/**
+ * @return the ${bare_field_name}
+ */</template><template autoinsert="true" context="settercomment_context" deleted="false" description="Comment for setter method" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.settercomment" name="settercomment">/**
+ * @param ${param} the ${bare_field_name} to set
+ */</template><template autoinsert="true" context="constructorcomment_context" deleted="false" description="Comment for created constructors" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.constructorcomment" name="constructorcomment">/**
+ * ${tags}
+ */</template><template autoinsert="false" context="filecomment_context" deleted="false" description="Comment for created Java files" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.filecomment" name="filecomment">/*
+ * SourceGap CONFIDENTIAL
+ * ---------------------
+ * Copyright (c) 2012-${date} SourceGap
+ * All Rights Reserved.
+ *
+ * NOTICE: All information contained herein is, and remains
+ * the property of SourceGap and it's suppliers, if any.  
+ * The intellectual and technical concepts contained herein 
+ * are proprietary to SourceGap and it's suppliers and may be 
+ * covered by U.S. and Foreign Patents, patents in process, 
+ * and are protected by trade secret or copyright law.  
+ * Dissemination of this information or reproduction
+ * of this material is strictly forbidden unless prior written
+ * permission is obtained from SourceGap.
+ */
+</template><template autoinsert="false" context="typecomment_context" deleted="false" description="Comment for created types" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.typecomment" name="typecomment">/**
+ * TODO: Add class Description for ${package_name}.${type_name}
+ * @author ${user}
+ * @since ${date}
+ * @version 1.0
+ * ----------------
+ * Tags: ${tags}
+ */
+</template><template autoinsert="true" context="fieldcomment_context" deleted="false" description="Comment for fields" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.fieldcomment" name="fieldcomment">/**
+ * 
+ */</template><template autoinsert="true" context="methodcomment_context" deleted="false" description="Comment for non-overriding methods" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.methodcomment" name="methodcomment">/**
+ * ${tags}
+ */</template><template autoinsert="true" context="overridecomment_context" deleted="false" description="Comment for overriding methods" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.overridecomment" name="overridecomment">/* (non-Javadoc)
+ * ${see_to_overridden}
+ */</template><template autoinsert="true" context="delegatecomment_context" deleted="false" description="Comment for delegate methods" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.delegatecomment" name="delegatecomment">/**
+ * ${tags}
+ * ${see_to_target}
+ */</template><template autoinsert="true" context="newtype_context" deleted="false" description="Newly created files" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.newtype" name="newtype">${filecomment}
+${package_declaration}
+
+${typecomment}
+${type_declaration}</template><template autoinsert="false" context="classbody_context" deleted="false" description="Code in new class type bodies" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.classbody" name="classbody">    //----------------------Public Instance Variables---------------------------
+
+    //---------------------Protected Instance Variables-------------------------
+
+    //----------------------Private Instance Variables--------------------------
+    /** the logger used for logging all events within this class. */
+    //private static final transient Logger log = LoggerFactory.getLogger(${type_name}.class);
+
+    /** the serial version id of this class.*/
+    @SuppressWarnings("unused")
+    private static final long serialVersionUID = 1L;
+
+    //-----------------------Inner Classes/Interfaces---------------------------
+
+    //------------------------Public Constructors-------------------------------
+    /**default empty constructor.*/
+    public ${type_name}() { super(); }
+
+    //--------------------------Public Methods----------------------------------
+
+    //--------------------------Public Mutators---------------------------------
+
+    //-----------------------Protected Constructors-----------------------------
+
+    //-------------------------Protected Methods--------------------------------
+
+    //-------------------------Protected Mutators-------------------------------
+
+    //--------------------------Package Methods---------------------------------
+
+    //--------------------------Package Mutators--------------------------------
+
+    //------------------------Private Constructors------------------------------
+
+    //--------------------------Private Methods---------------------------------
+
+    //--------------------------Private Mutators--------------------------------
+
+    //-------------------------Static Initializers------------------------------
+</template><template autoinsert="false" context="interfacebody_context" deleted="false" description="Code in new interface type bodies" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.interfacebody" name="interfacebody">//----------------------Public Instance Variables---------------------------
+
+//--------------------------Public Methods----------------------------------
+
+//--------------------------Public Mutators---------------------------------
+</template><template autoinsert="true" context="enumbody_context" deleted="false" description="Code in new enum type bodies" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.enumbody" name="enumbody">
+</template><template autoinsert="true" context="annotationbody_context" deleted="false" description="Code in new annotation type bodies" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.annotationbody" name="annotationbody">
+</template><template autoinsert="true" context="catchblock_context" deleted="false" description="Code in new catch blocks" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.catchblock" name="catchblock">// ${todo} Auto-generated catch block
+${exception_var}.printStackTrace();</template><template autoinsert="true" context="methodbody_context" deleted="false" description="Code in created method stubs" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.methodbody" name="methodbody">// ${todo} Auto-generated method stub
+${body_statement}</template><template autoinsert="true" context="constructorbody_context" deleted="false" description="Code in created constructor stubs" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.constructorbody" name="constructorbody">${body_statement}
+// ${todo} Auto-generated constructor stub</template><template autoinsert="true" context="getterbody_context" deleted="false" description="Code in created getters" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.getterbody" name="getterbody">return ${field};</template><template autoinsert="true" context="setterbody_context" deleted="false" description="Code in created setters" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.setterbody" name="setterbody">${field} = ${param};</template></templates>
